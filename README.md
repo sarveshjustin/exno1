@@ -1,6 +1,8 @@
 ```
 import pandas as pd
-import pandas as pd
+import numpy as np
+import seaborn as sns
+from scipy import stats
 df=pd.read_csv('titanic_dataset.csv')
 df
 df.head()
@@ -21,7 +23,8 @@ high=q3+1.5*iqr
 high
 dff=dff[((dff>=low)&(dff<=high))]
 dff
-import pandas as pd
-import seaborn as sns
 sns.boxplot(data=dff)
+data={'weight':[12,15,18,21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57,60,63,66,69,202,72, 75, 78, 81, 84, 232, 87, 90, 93,96,99,258]}
+ds=pd.DataFrame(data)
+ds
 ```
