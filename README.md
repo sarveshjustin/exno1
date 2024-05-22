@@ -1,11 +1,15 @@
 ```
 import pandas as pd
-df=pd.read_csv('/content/SAMPLEDS.csv')
+import pandas as pd
+df=pd.read_csv('titanic_dataset.csv')
 df
 df.head()
 df.tail()
 df.info()
 df.isnull().sum()
+age=[1,3,28,27,25,92,30,39,40,50,26,24,29,94]
+dff=pd.DataFrame(age)
+dff
 q1=dff.quantile(0.25)
 q2=dff.quantile(0.5)
 q3=dff.quantile(0.75)
