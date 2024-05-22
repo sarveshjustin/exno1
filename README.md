@@ -1,3 +1,4 @@
+```
 import pandas as pd
 df=pd.read_csv('/content/SAMPLEDS.csv')
 df
@@ -19,3 +20,4 @@ dff
 import pandas as pd
 import seaborn as sns
 sns.boxplot(data=dff)
+```
